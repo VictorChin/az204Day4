@@ -42,22 +42,11 @@ namespace TopicSubscriptionWithRuleOperationsSample
 
         private static async Task RunAsync(string fullyQualifiedNamespace, string connection)
         {
-            if (!string.IsNullOrEmpty(connection))
-            {
-                s_client = new ServiceBusClient(Environment.GetEnvironmentVariable(connection));
-                s_adminClient = new ServiceBusAdministrationClient(Environment.GetEnvironmentVariable(connection));
-            }
-            else if (!string.IsNullOrEmpty(fullyQualifiedNamespace))
-            {
-                var defaultAzureCredential = new DefaultAzureCredential();
-                s_client = new ServiceBusClient(fullyQualifiedNamespace, defaultAzureCredential);
-                s_adminClient = new ServiceBusAdministrationClient(fullyQualifiedNamespace, defaultAzureCredential);
-            }
-            else
-            {
-                throw new ArgumentException(
-                    "Either a fully qualified namespace or a connection string environment variable must be specified.");
-            }
+          
+                s_client = new ServiceBusClient("Endpoint = sb://norlysbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxNX+7O3YfkLaSP530HZ6Yh0GyGH4LxwGUrjkHiQkLM=");
+                s_adminClient = new ServiceBusAdministrationClient("Endpoint = sb://norlysbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxNX+7O3YfkLaSP530HZ6Yh0GyGH4LxwGUrjkHiQkLM=");
+          
+          
             
             Console.WriteLine($"Creating topic {TopicName}");
             await s_adminClient.CreateTopicAsync(TopicName);
