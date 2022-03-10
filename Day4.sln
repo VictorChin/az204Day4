@@ -25,13 +25,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBus", "ServiceBus", 
 		Service Bus Samples\Sample10_ClaimCheck.cs = Service Bus Samples\Sample10_ClaimCheck.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageProducer", "MessageProducer\MessageProducer.csproj", "{6FF261C7-8F5D-4587-8AE0-9CF77ED91095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageProducer", "MessageProducer\MessageProducer.csproj", "{6FF261C7-8F5D-4587-8AE0-9CF77ED91095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueClient", "QueueClient\QueueClient.csproj", "{F9D7ABF1-D6CA-4C44-ADBA-C5E94E17D974}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueClient", "QueueClient\QueueClient.csproj", "{F9D7ABF1-D6CA-4C44-ADBA-C5E94E17D974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueProcessor", "QueueProcessor\QueueProcessor.csproj", "{4D30C8BC-542E-4EE3-98F0-9776F5FBFB6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueProcessor", "QueueProcessor\QueueProcessor.csproj", "{4D30C8BC-542E-4EE3-98F0-9776F5FBFB6E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicFilters", "TopicFilters\TopicFilters.csproj", "{69C00810-A93B-4E28-A37D-860520C7C134}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventGrid", "EventGrid", "{0557D1B8-B86E-4B75-992C-91DC7BDB9667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventGridPublisher", "EventGridPublisher\EventGridPublisher.csproj", "{75E8188F-2996-48EB-8942-C649868D5794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,10 @@ Global
 		{69C00810-A93B-4E28-A37D-860520C7C134}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C00810-A93B-4E28-A37D-860520C7C134}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C00810-A93B-4E28-A37D-860520C7C134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E8188F-2996-48EB-8942-C649868D5794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E8188F-2996-48EB-8942-C649868D5794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E8188F-2996-48EB-8942-C649868D5794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E8188F-2996-48EB-8942-C649868D5794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +82,7 @@ Global
 		{F9D7ABF1-D6CA-4C44-ADBA-C5E94E17D974} = {0F03173A-4615-4668-8469-49BDFB7026C0}
 		{4D30C8BC-542E-4EE3-98F0-9776F5FBFB6E} = {0F03173A-4615-4668-8469-49BDFB7026C0}
 		{69C00810-A93B-4E28-A37D-860520C7C134} = {0F03173A-4615-4668-8469-49BDFB7026C0}
+		{75E8188F-2996-48EB-8942-C649868D5794} = {0557D1B8-B86E-4B75-992C-91DC7BDB9667}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C59B0D08-8D9D-43EB-AD6B-6AAC647D4CEE}
