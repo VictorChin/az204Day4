@@ -43,7 +43,7 @@ namespace TodoListService.Controllers
 
         // GET: api/values
         [HttpGet("{id}", Name = "Get")]
-        [RequiredScope(new string[] { "ToDoList.Read", "ToDoList.Write" })]
+        [RequiredScope(new string[] { "ToDoList.Read" })]
         public Todo Get(int id)
         {
             return TodoStore.Values.FirstOrDefault(t => t.Id == id);
